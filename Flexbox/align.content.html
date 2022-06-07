@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border:2px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhhhhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhh hhhhhhhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhh hhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhhhhhhhh hhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhh hhhhhhhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+
+    <p>end</p>
+    <div class="container flex-end">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhhhhhhhh hhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhh hhhhhhhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhhhhhhhh hhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhh hhhhhhhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+       <div class="item">hhhhhhhhhhhh fefehhhhh hhhhhhhhhhhhh</div>
+       <div class="item">hhhhhh hhhhhh hhhh hhhhh hhhhhhhhh</div> 
+       <div class="item">hhhhh hhhhhhh h hhhhh hhhhh hhhhhhhh</div> 
+       <div class="item">hhhhhhhhhhh hhhhh hhhhh hhhef efefefhhhhhhh</div> 
+       <div class="item">hhhhhhhh hhhhhh hhhhhhhhhhh</div> 
+       <div class="item">hhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh</div> 
+       <div class="item">hhhhh hh hhh  hhhhhh</div> 
+       <div class="item">hhhhh hhhhhhhhhhhhb  fb bfbfh  hhhhh hhhhhhhh</div> 
+    </div>
+</body>
+</html>
